@@ -1,0 +1,104 @@
+:root {
+  --primary-color: #090B1A;
+  --secondary-color: #1B1938;
+  --accent-color: #AA5CDB;
+  --main-font: 'Inter', sans-serif;
+  --secondary-font: 'Lexend Deca', sans-serif;
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.stats-card {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 360px;
+  height: auto;
+  padding: 88px 20px;
+  background-color: var(--primary-color);
+}
+
+.stats-card__img {
+  width: 100%;
+  min-width: 327px;
+  height: 240px;
+  background: linear-gradient(rgba(170,92,219,.6), rgba(170,92,219,.6)), url('/images/image-header-desktop.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px 10px 0 0;
+}
+
+.stats-card__info {
+  width: 100%;
+  min-width: 327px;
+  padding: 30px 35px;
+  background-color: var(--secondary-color);
+  border-radius: 0 0 10px 10px;
+}
+
+.stats-card__info-title {
+  margin: 10px 0;
+  font-family: var(--main-font);
+  font-size: 2.8rem;
+  line-height: 3.2rem;
+  color: #fff;
+  text-align: center;
+}
+
+.stats-card__info-title span {
+  color: var(--accent-color);
+}
+
+.stats-card__info-body {
+  margin: 15px 0;
+  font-family: var(--main-font);
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+}
+
+.stats-card__info-facts .stats-card__info-facts-numbers {
+  margin-top: 30px;
+  font-family: var(--main-font);
+  font-size: 2.6rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.stats-card__info-facts .stats-card__info-facts-text {
+  margin-bottom: 20px;
+  font-family: var(--main-font);
+  font-size: 1.4rem;
+  line-height: 2.5rem;
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-decoration: none;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+footer a {
+  color: rgba(255, 255, 255, 0.5);
+}
